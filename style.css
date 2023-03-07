@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  width: 300px;
+  height: 200px;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color:white;
+  background: linear-gradient(90deg, rgb(57, 181, 252) 0%, rgb(34, 79, 226) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper{
+  width: 230px;
+  border-radius: 5px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.wrapper .input-data{
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .input-data input{
+  height: 100%;
+  width: 50%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #4158d0;
+}
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+button{
+  background-color: white;
+  color: #4158d0;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 50px;
+}
